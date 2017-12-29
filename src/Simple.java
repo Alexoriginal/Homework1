@@ -1,5 +1,13 @@
+import java.util.Scanner;
+
 public class Simple {
+
+
+
     public static void main(String[] args) {
+
+
+        //==============================================
         //Четное число
 //        int n=6;
 //        if(n%2==0){
@@ -21,7 +29,7 @@ public class Simple {
 //        if(m1>n1){
 //            System.out.println("Число "+n+" ближе к "+a);
 //        }
-       //Вывести на экран числа от -10 до 25 с помощью всех известных циклов
+        //Вывести на экран числа от -10 до 25 с помощью всех известных циклов
 
 //        for(int i=-10;i<26;i++){
 //            System.out.print(i);
@@ -44,14 +52,88 @@ public class Simple {
 
         //Заполнить массив short типа числами от 100 до 0.
 
-        short[] mass=new short[101];
-        for(int i=0;i<mass.length;i++){
-           System.out.println(mass[i]+" ");
-        }
+//        short[] mass=new short[101];
+//        for(int i=0;i<100;i--){
+//           System.out.println(mass[i]+" ");
+//        }
 
- //       for(int i=0;i<mass.length;i++){
-//            System.out.print(mass[i]+"");
-            //      }
+//        for(int i=0;i<=3;i++){
+//            if(i==5 || i==7){
+//                System.out.println(i);
+//            }else{
+//                System.out.println("else");
+//            }
+//            System.out.println("fix");
+//        }
+
+//                String str ="Был и я среди донцов...\\n\"+\n" +
+//                "        \"Была пора: наш праздник молодой...\\n\"+\n" +
+//                "        \"В альбом (Гонимый рока самовластьем...)\\n\"+\n" +
+//                "        \"В альбом (Долго сих листов заветных...)\\n\"+\n" +
+//                "        \"В альбом А. О. Смирновой\\n\"+\n" +
+//                "        \"В альбом княжны А. Д. Абамалек\\n\"+\n" +
+//                "        \"В альбом Павлу Вяземскому\\n\"+\n" +
+//                "        \"В еврейской хижине лампада...\\n\"+\n" +
+//                "        \"В крови горит огонь желанья...\\n\"+\n" +
+//                "        \"В мои осенние досуги...\\n\"+\n" +
+//                "        \"В начале жизни школу помню я...\\n\"+\n" +
+//                "        \"В поле чистом серебрится Снег...\\n\";"
+//
+//             String str2=str.replace();
+
+
+//            System.out.println("Type any number - ");
+//            Scanner in = new Scanner(System.in);
+//
+//
+//            int n = in.nextInt();
+//            if(n%2 == 1){
+//                System.out.println("Нечетное число");
+//            }
+//            else if (n%2 == 0){
+//                System.out.println("Четное число");
+//            }
+//        //=======================================================
+//            int i=0;
+//        System.oui.println(i);
+//
+   //     firtsMethod();
+   //     String str2=firstStringMethod();
+//        System.out.println(firstStringMethod());
+//        int a=0;//бязательно ини
+//        String str="if star";
+//        if(str.length()!=0){
+//            a=5;
+//        }
+//
+//        System.out.println(a);
+
+        String one="one";
+        System.out.println(one);
+        String two=firstStringMethod2(one);
+        System.out.println(two);
+
 
     }
+
+        public static void firtsMethod(){
+            int a = 2;
+            int b = 5;
+            int sum = a + b;
+            System.out.println(sum);
+
+        }
+
+//     public static String firstStringMethod() {//переменная типа стринг в методе
+//        String str="str";
+//        return null;//return str;
+//    }
+
+    public static String firstStringMethod2(String str) {//переменная типа стринг в методе
+     str=" sv str";
+        return str;
+    }
+
+
+
 }
