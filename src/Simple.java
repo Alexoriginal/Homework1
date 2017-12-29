@@ -45,13 +45,20 @@ public class Simple {
         //Заполнить массив short типа числами от 100 до 0.
 
         short[] mass=new short[101];
-        for(int i=0;i<mass.length;i++){
-           System.out.println(mass[i]+" ");
+
+        for(short i=101;i<mass.length;i--){
+            mass[i]=i;
+            System.out.print(mass[i]+"");
+
         }
 
- //       for(int i=0;i<mass.length;i++){
-//            System.out.print(mass[i]+"");
-            //      }
+
+
+
+
+
+
+
 
     }
 }
