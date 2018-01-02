@@ -1,3 +1,7 @@
+import com.sun.xml.internal.bind.v2.runtime.output.SAXOutput;
+
+import javax.sound.midi.Soundbank;
+
 public class Simple {
     public static void main(String[] args) {
         //Четное число
@@ -43,20 +47,63 @@ public class Simple {
 //        }
 
         //Заполнить массив short типа числами от 100 до 0.
+//
+//        short[] mass=new short[101];
+//
+//        for(short i=100;i!=0;i--){
+//           mass[i]=i;
+//            System.out.print(i+" , ");
+//
+//        }
+        //======Вывести массив каждую букву(символ).=====================================
 
-        short[] mass=new short[101];
+//        String str="abcdefg";
+//        //System.out.println(str);
+//        String[]strMass=str.split(",");
+//       // System.out.println(strMass.length);
+//        for(String mass:strMass){
+//            System.out.print(mass+" , ");
+//        }
+        //=============Вывести на экран все числа от 1 до 100, которые делятся на 5 без остатка=========================================
 
-        for(short i=101;i<mass.length;i--){
-            mass[i]=i;
-            System.out.print(mass[i]+"");
+//        for(int i=1;i<100;i++){
+//            if(i%5==0){
+//                System.out.print(i);
+//            }
+//        }
+        //============наибольшим(max) и наименьшим(min) ======================================
 
+        int [] arr=new int[10];
+
+        for(int i=0;i<10;i++){
+            arr[i]=(int)(Math.random()*20);
         }
 
+        for(int i=0;i<10;i++){
+            System.out.println(arr[i]+"  ");
+        }
 
+        int max=arr[0];
+        int min=arr[0];
 
+        for(int i=0;i<10;i++){
+            if(max<arr[i]){
+                max=arr[i];
+            }
+            if(min>arr[i]){
+                min=arr[i];
+            }
+        }
+        System.out.println("MАксимальное значение"+max);
 
+        System.out.println("Минимальное значение"+min);
 
-
+        int sum=0;
+        for(int i=0;i<10;i++){
+            sum=sum+arr[i];
+            arr[i]=sum;
+        }
+        System.out.print("Сумма элементов="+sum);
 
 
 
